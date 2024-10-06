@@ -1,0 +1,233 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background: var(--background);
+}
+
+/* Header */
+nav {
+  position: fixed;
+  background: var(--background);
+  top: 0;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  padding: 20px;
+}
+
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+nav img {
+  width: 80px;
+  animation: logo 0.75s ease-in-out;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+nav .parent {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  text-align: center;
+  align-items: center;
+  width: fit-content;
+  min-width: 800px;
+  border-radius: 50px;
+  background: var(--nav);
+}
+
+nav .links {
+  margin-right: 10px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 10px;
+  position: relative;
+}
+
+nav a:hover,
+nav a.active {
+  background: var(--gold);
+  border-radius: 50px;
+  transition: 0.25s background;
+  color: black;
+}
+
+nav .btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+section.one {
+  margin-top: 150px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+section.form .parent .master {
+  border: 6px solid var(--navy);
+  min-width: fit-content;
+  padding: 30px;
+  border-radius: 25px;
+  font-family: "inter";
+  font-weight: 600;
+}
+
+section input,
+section select {
+  border-radius: 16px;
+  border: 2px solid var(--navy);
+}
+
+select {
+  appearance: none;
+}
+
+/* select::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+} */
+
+section .group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+  section .group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  section .group {
+    grid-template-columns: auto;
+  }
+}
+
+.master {
+  position: relative;
+}
+
+.boy {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+
+.boy img {
+  width: 250px;
+}
+
+.btn-navy {
+  font-size: 24px;
+  padding: 5px 30px;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 60px 0 0;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+footer {
+  padding: 0 20px;
+  background: #16263A;
+  margin-top: 100px;
+  margin-bottom: -20px;
+}
+
+footer .parent {
+  position: relative;
+}
+
+footer h3 {
+  font-family: "Inknut Antiqua";
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+footer .master {
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 2fr) 3fr;
+  gap: 10px;
+}
+
+footer div div {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer .foo img:hover {
+  transform: scale(1.05);
+  transition: .25s;
+  cursor: pointer;
+
+}
+
+footer .bell {
+  position: absolute;
+  right: 0;
+  bottom: -45px;
+}
+
+footer .tail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 10px;
+  border-top: 2px solid #000;
+}

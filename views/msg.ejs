@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/framework.css" />
+    <!-- title and description -->
+    <title>DMH</title>
+
+    <style>
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        height: 100vh;
+        font-size: 2rem;
+      }
+
+      a {
+        font-size: 1rem;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div><%= msg %></div>
+      <div>You will be redirected in <span id="time"></span></div>
+      <div><a href="/" class="btn btn-gold">Home page</a></div>
+    </div>
+
+    <script>
+      let timer = 5;
+
+      function redirect() {
+        time.innerHTML = timer;
+
+        setInterval(() => {
+          timer -= 1;
+
+          time.innerHTML = timer;
+        }, 1000);
+
+        setTimeout(function () {
+          location.href = "/";
+        }, timer * 1000);
+      }
+
+      window.onload = redirect();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/header') %>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>Digital Minds Hub</title>
+  </head>
+  <body>
+    <div class="small-screen-alert">
+      <img src="assets/logo/logo.svg" alt="dmh" />
+      <h3>
+        For best experience, It's better to surve our website from laptop or
+        personal computer.
+      </h3>
+    </div>
+
+    <nav>
+      <div class="parent">
+        <div class="logo">
+          <img
+            src="assets/logo/logo.svg"
+            alt="Digital Minds Hub Logo"
+            draggable="false"
+            id="logo"
+          />
+        </div>
+        <div class="links">
+          <a href="/#about" class="nav-link">About Us</a>
+          <a href="/#dmh" class="nav-link">Intiative</a>
+          <a href="/#feedback" class="nav-link">Feedback</a>
+          <a href="/#courses" class="nav-link">Courses</a>
+          <a href="/#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="buttons" onclick="location.href='/register'">
+          <button class="btn btn-primary">Register</button>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="parent">
+        <div class="left">
+          <h2 class="text">Welcome to</h2>
+          <img
+            src="https://digitalmindshub.org/assets/logo/landing.svg"
+            alt="Digital Minds Hub"
+            draggable="false"
+          />
+          <p>
+            Where Young Minds <br />
+            Become Digital Superheroes !
+          </p>
+          <button
+            class="btn btn-primary btn-landing"
+            onclick="location.href = '/register'"
+          >
+            Enroll Now
+          </button>
+        </div>
+        <div class="right">
+          <img
+            src="assets/logo/DMH.svg"
+            alt="logo"
+            draggable="false"
+            class="master"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="goals" id="about">
+      <div class="parent head">
+        <h2 class="title">Our Goals</h2>
+        <p class="sub-title">
+          At Digital Minds Hub, we are committed to contributing to a better
+          world through our educational initiatives. We align our efforts with
+          the following Sustainable Development Goals (SDGs) to make a
+          meaningful impact.
+        </p>
+      </div>
+      <div class="parent">
+        <div class="images">
+          <img src="assets/about/sdgs_right.svg" alt="SDGs" />
+          <img src="assets/about/center.svg" alt="SDGs" />
+          <img src="assets/about/sdgs_left.svg" alt="SDGs" />
+        </div>
+      </div>
+      <div class="text">
+        <div class="parent">
+          <p>
+            <span class="s">No Poverty Quality Education:</span> By offering
+            <span class="b">free education</span> to underprivileged children,
+            we aim to break the cycle of poverty. We believe that education is a
+            powerful tool for social mobility and economic empowerment.
+          </p>
+
+          <p>
+            <span class="s">Quality Education:</span> We strive to provide
+            <span class="b">high-quality, accessible</span> programming
+            education to children, empowering them with the skills they need for
+            the future. Our courses are designed to be inclusive and engaging,
+            ensuring that every student has the opportunity to succeed.
+          </p>
+          <p>
+            <span class="s">Decent Work and Economic Growth:</span> Through our
+            programs, we equip students with skills that are essential for
+            future employment in the digital economy. By fostering
+            entrepreneurship and innovation, we contribute to
+            <span class="b">sustainable economic growth</span> and the creation
+            of decent <span class="b">work opportunities</span>.
+          </p>
+          <p>
+            <span class="s">Industry, Innovation, and Infrastructure:</span>
+            We focus on fostering
+            <span class="b">innovation and technical</span> skills in young
+            minds, preparing them to be the future leaders in the tech industry.
+            Our curriculum is designed to inspire creativity and
+            <span class="b">problem-solving</span>, contributing to a more
+            innovative and resilient economy.
+          </p>
+          <p>
+            <span class="s">Reduced Inequalities:</span> Our
+            <span class="b">Programming Literacy Initiative</span> ensures that
+            children from all backgrounds, regardless of their socioeconomic
+            status or abilities, have <span class="b">equal access</span> to
+            quality education. We are committed to bridging the gap and reducing
+            <span class="b">educational inequalities.</span>
+          </p>
+          <p>
+            <span class="s">Partnerships for the Goals:</span> We collaborate
+            with various organizations, educators, and communities to expand our
+            <span class="b">reach and impact</span>. By forming strong
+            partnerships, we aim to create a larger network of support for our
+            students and amplify our efforts to achieve these goals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="why" id="why">
+      <div class="parent head lr">
+        <div class="left">
+          <h2 class="title">Why Digital Minds Hub ?</h2>
+          <p class="sub-title">
+            At Digital Minds Hub, we are dedicated to making a lasting impact on
+            children's lives through programming education and beyond. Here’s
+            why DMH:
+          </p>
+        </div>
+        <div class="right">
+          <img src="assets/about/why.svg" alt="Why" />
+        </div>
+      </div>
+
+      <div class="parent charts">
+        <div class="left">
+          <div class="alumi">
+            <div class="chart">
+              <img src="assets/icons/graduate-chart.svg" alt="Graduate" />
+              <div class="chart-text"><span id="chOne"></span>+</div>
+            </div>
+            <div class="title">Total Alumni Graduated</div>
+            <br />
+            <div class="des">
+              Over <b>1,000</b> students have gained life-changing skills
+              through our programs, joining a global community of young
+              innovators.
+            </div>
+          </div>
+          <div class="alumi">
+            <div class="chart">
+              <img src="assets/icons/money-chart.svg" alt="Graduate" />
+              <div class="chart-text">$<span id="chTwo"></span>+</div>
+            </div>
+            <div class="title">Total Financial Aid Provided</div>
+            <br />
+            <div class="des">
+              We have provided over <b>$200</b> in financial aid to ensure no
+              child is left behind due to financial barriers, supporting
+              education for the underprivileged, including orphans and children
+              with disabilities.
+            </div>
+          </div>
+          <div class="alumi">
+            <div class="chart">
+              <img src="assets/icons/clock-chart.svg" alt="Graduate" />
+              <div class="chart-text"><span id="chThree"></span>+</div>
+            </div>
+            <div class="title">Total Course Hours Completed</div>
+            <br />
+            <div class="des">
+              Students have completed more than <b>3,000</b> hours of hands-on
+              programming, equipping them with real-world skills that prepare
+              them for the future.
+            </div>
+          </div>
+          <div class="alumi">
+            <div class="chart">
+              <img src="assets/icons/happy-chart.svg" alt="Graduate" />
+              <div class="chart-text"><span id="chFour"></span>%</div>
+            </div>
+            <div class="title">Student Satisfaction Rate</div>
+            <br />
+            <div class="des">
+              With a satisfaction rate of <b>99%</b>, our students and their
+              parents consistently express high levels of fulfillment and
+              satisfaction, reflecting the quality of teaching and programs they
+              receive.
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <h3>Our Instructors:</h3>
+          <p>
+            At <b>Digital Minds Hub</b>, our instructors are a key part of what
+            makes us unique. All of our educators are talented young
+            professionals with a passion for teaching and are specifically
+            trained to engage with children. They make learning interactive,
+            fun, and accessible for all students, breaking down complex concepts
+            into simple steps that kids can easily understand. By ensuring every
+            student feels confident in their learning journey, we create an
+            environment where kids love to learn and thrive.
+          </p>
+          <h3>Personalized Support:</h3>
+          <p>
+            We understand that every child learns at their own pace, which is
+            why we offer <b>free 1-on-1 sessions</b> for students who may be
+            struggling to keep up or need extra guidance. These personalized
+            sessions are designed to provide the additional support necessary to
+            ensure no student is left behind. Moreover, we maintain a close
+            relationship with parents, providing regular progress updates and
+            ensuring they’re aware of how their child is advancing.
+          </p>
+          <h3>Holistic Education:</h3>
+          <p>
+            At <b>Digital Minds Hub</b>, we don’t just teach programming—we
+            build <b>well-rounded individuals</b>. Our curriculum integrates
+            crucial <b>soft skills</b> such as
+            <b>communication, teamwork, leadership, and problem-solving</b>,
+            preparing our students for a future beyond coding. We believe in
+            nurturing the whole child, providing them with the skills needed to
+            succeed in life and future careers.
+          </p>
+          <h3>Engaging Learning:</h3>
+          <p>
+            Learning should be fun! Our courses are designed specifically for
+            kids <b>aged 6 to 17</b>. Courses include games and interactive
+            learning techniques to keep students engaged. We use fun, hands-on
+            methods that make learning exciting while ensuring kids grasp
+            important programming concepts.
+          </p>
+          <h3>Diverse Courses:</h3>
+          <p>
+            We cater to all skill levels, offering a wide range of courses.
+            Whether a student is just starting out with
+            <b>programming basics</b> or ready to tackle
+            <b>advanced concepts</b>, we have the right course to challenge them
+            and help them grow. Our curriculum is designed to take students from
+            the very beginning to mastering advanced techniques, ensuring they
+            are ready for real-world applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who -->
+    <section class="who" id="who">
+      <div class="parent head">
+        <h2 class="title">Who Are We?</h2>
+        <p class="sub-title">
+          Digital Minds Hub is an Egyptian-based youth organization with a
+          global mission. Established in 2022 by Kareem H. Elsenosy, dedicated
+          to teaching programming and soft skills to kids aged 6 to 17. We offer
+          a diverse range of courses, from the basics of coding to advanced
+          problem-solving, and we believe in nurturing creativity, critical
+          thinking, and leadership skills in every student.
+        </p>
+      </div>
+      <div class="margin-box"></div>
+      <div class="parent">
+        <h3>Our Vision:</h3>
+        <p>
+          At <span class="b">Digital Minds Hub</span>, we envision a world where
+          every child—starting in Egypt, expanding across Africa, and ultimately
+          reaching every corner of the globe—has the opportunity to learn
+          programming and use their skills to create a better future. By
+          empowering the next generation with the knowledge and tools to solve
+          real-world challenges, we aim to make the world a better place for
+          all. We believe that coding isn’t just a skill, it’s a gateway to
+          innovation, problem-solving, and impactful changes.
+        </p>
+        <h3>Our Mission:</h3>
+        <p>
+          Our mission is to make programming education accessible to every
+          child, regardless of their background or financial circumstances.
+          Through affordable courses, financial aid, full scholarships, and
+          initiatives for underserved communities, we are committed to providing
+          every student with the resources they need to thrive. We don’t stop at
+          education—we are also dedicated to creating job opportunities for
+          undergraduates and young adults passionate about programming and
+          teaching. By offering comprehensive training, we empower them to
+          become future leaders in the tech industry. At
+          <span class="b">Digital Minds Hub</span>, our focus is on impact. We
+          believe that by investing in young minds today, we are building a
+          brighter and more equitable tomorrow.
+        </p>
+      </div>
+
+      <div class="parent avatar">
+        <div class="avatar">
+          <img src="assets/kareem.png" alt="Kareem" />
+          <div class="text">
+            <div class="name">Kareem H. Elsenosy</div>
+            <div class="title">Founder</div>
+          </div>
+          <div class="icons">
+            <img src="assets/icons/mail.svg" alt="mail" style="width: 26px" onclick="location.href= 'mailto:google@google.com'" />
+            <img src="assets/icons/in.svg" alt="mail" style="width: 26px" onclick="location.href= 'https://google.com'" />
+            <img src="assets/icons/insta.svg" alt="mail" style="width: 26px" onclick="location.href= 'https://google.com'" />
+            <img src="assets/icons/fb.svg" alt="mail" style="width: 26px" onclick="location.href= 'https://google.com'" />
+          </div>
+        </div>
+
+        <div class="center">
+          <img src="assets/pharo.svg" alt="Pharo" />
+        </div>
+
+        <div class="avatar">
+          <img src="assets/ahmed.png" alt="Ahmed" />
+          <div class="text">
+            <div class="name">Ahmed M. Sokar</div>
+            <div class="title">Co-Founder</div>
+          </div>
+          <div class="icons l">
+            <img src="assets/icons/mail.svg" alt="mail" style="width: 26px" onclick="location.href= 'mailto:google@google.com'" />
+            <img src="assets/icons/in.svg" alt="mail" style="width: 26px" onclick="location.href= 'https://google.com'" />
+            <img src="assets/icons/insta.svg" alt="mail" style="width: 26px" onclick="location.href= 'https://google.com'" />
+            <img src="assets/icons/fb.svg" alt="mail" style="width: 26px" onclick="location.href= 'https://google.com'" />
+          </div>
+        </div>
+      </div>
+
+      <div class="parent">
+        <h3>Our Story:</h3>
+        <p>
+          A <span class="b">10-year-old</span> kid struggling with a lack of
+          education and resources in his home country. This young individual was
+          exhausted by the obstacles in pursuing his passion for programming but
+          was determined to overcome them. He resolved to become the best and
+          share his knowledge with the world. Driven by this passion,
+          <span class="b">Kareem</span> embarked on a journey that would
+          transform into both an initiative and a business. His vision was to
+          make tech education accessible and engaging for children. For an
+          entire year, Kareem’s dedication never wavered. Then, what began as a
+          solo endeavor soon expanded with the addition of his partner,
+          <span class="b">Ahmed</span>. Ahmed’s passion for teaching and his
+          unwavering dedication added significant value to
+          <span class="b">Digital Minds Hub</span>. Together, they began
+          teaching and rapidly growing the organization, making a significant
+          impact with their combined efforts. Today,
+          <span class="b">Digital Minds Hub</span> stands as one of
+          <span class="b">Egypt’s most trusted educational organizations</span>.
+          The team has expanded to include dedicated youth instructors who share
+          their knowledge with love and enthusiasm. Their journey from those
+          initial doubts to their current success reflects a commitment to
+          making a difference and inspiring the next generation of learners.
+        </p>
+      </div>
+    </section>
+
+    <!-- Litercy -->
+    <section class="dmh" id="dmh">
+      <div class="parent head lr">
+        <div class="left">
+          <h2 class="title">DMH Programming Literacy Initiative</h2>
+          <p class="sub-title">
+            At Digital Minds Hub, we believe that every child, regardless of
+            their background, ability, or financial situation, deserves the
+            opportunity to learn and thrive in the digital world. We offer a
+            special program dedicated to providing free programming education to
+            underprivileged students.
+          </p>
+        </div>
+        <div class="right">
+          <img src="assets/initative.svg" alt="initative" />
+        </div>
+      </div>
+      <div class="parent">
+        <h3>Full Scholarships for All:</h3>
+        <p>
+          <b>DMH Programming Literacy Initiative</b> offers
+          <b>full scholarships</b> to students who otherwise may not have the
+          financial means to access high-quality programming education. We
+          understand that some students may be unable to afford courses due to
+          their family’s financial constraints or their own health conditions.
+          we ensure that these students including orphans and those from
+          war-affected regions are not left behind in today’s rapidly evolving
+          digital world.
+        </p>
+        <h3>Inclusive Learning for Students with Special Needs:</h3>
+        <p>
+          We understand that every child has their own unique learning pace, and
+          we have trained instructors who are well-prepared to work with
+          students requiring additional attention and care. Our teaching methods
+          are adjusted to ensure that each child gets the support and guidance
+          they need to succeed.
+        </p>
+        <p>
+          <b
+            >Our initiative is designed to cater specifically to children
+            disabilities</b
+          >: This includes any kind of
+          <b>physical, intellectual, or developmental disability,</b> such as:
+        </p>
+        <ul style="margin: 20px 50px">
+          <li>Blind or Visually Impaired Students</li>
+          <li>
+            Students with Physical Disabilities (e.g., mobility impairments)
+          </li>
+          <li>Students with Learning Disabilities (e.g., dyslexia, ADHD)</li>
+        </ul>
+        <p>
+          <b>Students with Mental Health Challenges:</b> This can include
+          anxiety, depression, or other mental health conditions that may impact
+          their learning.
+        </p>
+        <p style="font-weight: 900; margin: 20px 0">
+          Students with Autism Spectrum Disorder (ASD)
+        </p>
+        <p style="font-weight: 900; margin: 20px 0">
+          Students from Low-Income Families or Economically Disadvantaged
+          Backgrounds.
+        </p>
+        <p style="font-weight: 900; margin: 20px 0">Orphans</p>
+        <p style="font-weight: 900; margin: 20px 0">
+          Students from War-Affected Regions (e.g., Sudanese, Palestinian, etc.)
+        </p>
+        <h3>Empowering the Next Generation:</h3>
+        <p>
+          <b>DMH Programming Literacy Initiative</b> isn't just about learning
+          to code; it’s about empowering students. By offering free education,
+          we provide these children with the skills to unlock new opportunities,
+          break the cycle of poverty, and have access to brighter futures. We
+          aim to equip them with programming knowledge and essential soft skills
+          like communication, teamwork, and problem-solving, giving them the
+          tools to build their own path in life.
+        </p>
+        <h3>Impact and Reach:</h3>
+        <p>
+          More than <b>200</b> students have successfully graduated from
+          <b>DMH Programming Literacy Initiative</b>, having gained the skills
+          and confidence to pursue careers and education in the tech field. In
+          addition, over <b>350</b> students have received financial aid,
+          ensuring that no child is denied the opportunity to learn due to
+          financial hardship.
+        </p>
+        <h3 style="color: var(--gold)">Registration:</h3>
+        <p>
+          Take the first step toward a brighter future with DMH Programming
+          Literacy Initiative, no matter your challenges, we're here to help you
+          succeed and build the skills for tomorrow. If you meet the eligibility
+          criteria, we encourage you to apply today and seize this opportunity
+          for free, high-quality programming education. Go to the
+          <a href="/register">registration page</a> to register and unlock your future in
+          programming!
+        </p>
+      </div>
+    </section>
+
+    <!-- Feedback -->
+    <section class="feedback">
+      <div class="parent head lr">
+        <div class="left">
+          <h2 class="title">Feedback From our Students and Parents</h2>
+          <p class="sub-title">
+            At Digital Minds Hub, we value feedback deeply. It's how we grow,
+            improve, and ensure that every student and parent feels heard. Your
+            feedback shapes our future, just as much as it shapes our students'
+            success.
+          </p>
+        </div>
+        <div class="right">
+          <img src="assets/feedback.svg" alt="feedback" />
+        </div>
+      </div>
+      <div class="parent" id="videos">
+        <h3>
+          Hear From <span style="color: #edc048">DMH</span> Future Tech Leaders:
+        </h3>
+        <p>
+          In this section, you'll meet some of our standout students who have
+          grown with DMH. Each of them has a unique journey, but they all share
+          one thing in common: their experience at DMH has sparked a passion for
+          technology that will carry them into their future careers. Watch the
+          videos below to hear directly from our students. They share their
+          stories about how Digital Minds Hub has shaped their understanding of
+          programming, boosted their confidence, and opened doors to new
+          opportunities. From learning their first lines of code to building
+          real-world projects, these young tech leaders are excited to share how
+          DMH has made a lasting impact on their lives.
+        </p>
+      </div>
+      <div class="parent">
+        <div class="swiper mySwiperFeeds" id="swiperx">
+          <div class="swiper-wrapper" style="padding: 20px 0;">
+            <!-- <div class="swiper-slide feed">
+              <div class="video">
+                <iframe
+                  src="https://drive.google.com/file/d/1BbVGZO7Nh8Bume8fnQ8zboF2iK9hC1XF/preview"
+                  allow="autoplay"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="card">
+                <div>
+                  <div class="name">Ahmed Mohamed</div>
+                  <div class="des">
+                    <img src="assets/icons/eg.svg" alt="Egypt Flag" />
+                    <span>16 years</span>
+                  </div>
+                </div>
+                <div><img src="assets/icons/play.svg" alt="play" /></div>
+              </div>
+            </div> -->
+            <% videos.forEach(function(video) { %>
+            <div class="swiper-slide feed">
+              <div class="video">
+                <iframe
+                  src="<%= video.videoSrc %>"
+                  do-not-allow="autoplay"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="card">
+                <div>
+                  <div class="name"><%= video.name %></div>
+                  <div class="des">
+                    <img src="<%= video.countryIcon %>" alt="Country Flag" />
+                    <span><%= video.age %> years</span>
+                  </div>
+                </div>
+                <div><img src="assets/icons/play.svg" alt="play" /></div>
+              </div>
+            </div>
+            <% }); %>
+          </div>
+          <div class="swiper-button-next" id="next"></div>
+          <div class="swiper-button-prev" id="prev"></div>
+          <div class="swiper-pagination" id="pag"></div>
+        </div>
+      </div>
+      <div class="parent" id="feedback">
+        <h3>
+          What Parents and Students Say About
+          <span style="color: #edc048">DMH</span> ?
+        </h3>
+        <p>
+          We take pride in the trust that parents place in us to guide their
+          children on their learning journey. We believe in maintaining an open
+          dialogue with parents to ensure we are providing the best possible
+          experience for their children. Below are some of the wonderful written
+          feedback we've received from parents who have seen the positive impact
+          of our programs.
+        </p>
+      </div>
+      <div class="parent">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/feedback/one.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/2.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/3.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/5.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/6.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/7.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/10.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/8.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/14.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/15.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/16.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/9.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/11.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/12.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/13.svg" alt="feedback" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/feedback/7.svg" alt="feedback" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses" id="courses">
+      <div class="parent head lr">
+        <div class="left">
+          <h2 class="title">Courses and Pricing</h2>
+          <p class="sub-title">
+            Courses at DMH are designed to provide exceptional value at a price
+            that is accessible to everyone. We understand the importance of
+            making education affordable, and we work hard to ensure that no
+            student is left behind due to financial constraints.
+          </p>
+        </div>
+        <div class="right">
+          <img src="assets/money.svg" alt="money" />
+        </div>
+      </div>
+      <div class="parent">
+        <h3>How Does Our Pricing Work ?</h3>
+        <p>
+          Our courses are priced to be accessible for all students,With flexible
+          pricing options, we aim to make learning programming a reality for as
+          many young minds as possible. Plus,
+          <span class="b"
+            >Most of our revenue goes towards supporting our social
+            initiatives</span
+          >, like the
+          <span class="b">DMH Programming Literacy Initiative</span>, providing
+          scholarships and free programming education to underprivileged
+          students. By enrolling, you’re investing in both your child’s future
+          and the future of others in need.
+        </p>
+      </div>
+      <div class="parent">
+        <div class="cards">
+          <div class="card">
+            <div class="alone">
+              <div class="price">10$</div>
+              <div class="price-des">0.5$ per session</div>
+              <div class="title">Beginner Track</div>
+              <div class="info">Introduction to programming</div>
+              <ul class="list">
+                <li>
+                  Learn the basics of coding with <b>Scratch</b> and
+                  <b>Python.</b>
+                </li>
+                <li>
+                  Dive deeper into Python with
+                  <b>loops, functions, and file handling.</b>
+                </li>
+                <li>Create your own <b>app</b> or <b>game</b></li>
+                <li>
+                  <b>Skills Gained:</b> Basic coding, problem-solving, python
+                  programming, loops, functions, file handling, basic app
+                  development.
+                </li>
+                <li>
+                  <b>Soft Skills:</b> Creativity, logical thinking,
+                  perseverance, Critical thinking, attention to detail, project
+                  management.
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-navy" onclick="location.href='/register'">
+              Buy Now
+            </button>
+            <div class="des">20 Live Sessions</div>
+          </div>
+          <div class="card">
+            <div class="alone">
+              <div class="price">25$</div>
+              <div class="price-des">0.5$ per session</div>
+              <div class="title">Web Track</div>
+              <div class="info">Web Development Basics</div>
+              <ul class="list">
+                <li>
+                  Learn the basics of coding with Create your first website
+                  using <b>HTML, CSS, and JavaScript</b>.
+                </li>
+                <li>Design your first own personal <b>Website</b>.</li>
+                <div class="info">Advanced Web</div>
+                <li>
+                  Master advanced CSS and JavaScript to build
+                  <b>interactive</b>, <b>animated</b> websites.
+                </li>
+                <li>
+                  <b>Skills Gained:</b> Skills Gained: HTML, CSS, JavaScript,
+                  web design, Advanced CSS, JavaScript animations, responsive
+                  design, interactivity
+                </li>
+                <li>
+                  <b>Soft Skills:</b> Design thinking, communication,
+                  adaptability, Problem-solving, attention to details,
+                  creativity.
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-navy" onclick="location.href='/register'">
+              Buy Now
+            </button>
+            <div class="des">25 Live Sessions</div>
+          </div>
+          <div class="card">
+            <div class="alone">
+              <div class="price">30$</div>
+              <div class="price-des">0.5$ per session</div>
+              <div class="title">Robotics Track</div>
+              <div class="info">Intro to Embededd systems</div>
+              <ul class="list">
+                <li>
+                  Build and program robots using <b>Arduino, Raspberry Pi</b>,
+                  and <b>ESP32</b>.
+                </li>
+                <li>
+                  Learn how <b>sensors, actuators</b>, and
+                  <b>embedded systems</b> work through platforms like
+                  <b>Wokwi</b> and <b>Tinkercad</b>.
+                </li>
+                <li><b>Languages Learned:</b> C++, Python, and MicroPython.</li>
+                <li>
+                  <b>Skills Gained:</b> Robotics basics, Arduino, Raspberry Pi,
+                  and ESP32 programming, sensor and actuator integration, IoT
+                  fundamentals, and embedded systems design.
+                </li>
+                <li>
+                  <b>Soft Skills:</b> Hands-on problem solving, innovation,
+                  teamwork.
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-navy" onclick="location.href='/register'">
+              Buy Now
+            </button>
+            <div class="des">30 Live Sessions</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate -->
+    <section class="cert" id="cert">
+      <div class="sec">
+        <div class="parent head">
+          <h2 class="title">
+            Showcase Your Achievements with a Career-Ready Portfolio
+          </h2>
+          <p class="sub-title">
+            Every certificate you earn at Digital Minds Hub becomes a key part
+            of your personal portfolio. Highlight your skills, projects, and the
+            certificates you've earned with us. Edit and update your portfolio
+            anytime, and share it freely with colleges and summer programs—it’s
+            yours to build and showcase!
+          </p>
+        </div>
+      </div>
+
+      <div class="parent">
+        <div class="cert-frame">
+          <img src="assets/certificate.svg" alt="Certificate" />
+        </div>
+      </div>
+
+      <div class="parent">
+        <button
+          class="btn btn-nav"
+          onclick="location.href = '/register'"
+          style="font-weight: 500; font-size: 24px"
+        >
+          Click here to begin your life changing adventure with Digital Minds
+          Hub!
+        </button>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="parent">
+        <div class="master">
+          <div>
+            <h3>GET IN TOUCH</h3>
+            <div class="des">
+              <div>
+                Email:
+                <a href="mailto:info@digitalmindshub.org"
+                  >info@digitalmindshub.org</a
+                >
+              </div>
+              <div>Phone: <a href="tel:+201234567890">+20 123 456 7890</a></div>
+              <div>Website: www.digitalmindshub.org</div>
+              <div>Address: Cairo, Egypt</div>
+            </div>
+          </div>
+          <div>
+            <h3>About us</h3>
+            <div class="des">
+              <div><a href="/#about">Our Goals</a></div>
+              <div><a href="/#why">Why Digital Minds Hub?</a></div>
+              <div><a href="/#who">Who Are We ?</a></div>
+            </div>
+          </div>
+          <div>
+            <h3>DMH Initiative</h3>
+            <div class="des">
+              <div><a href="/#dmh">Criteria</a></div>
+              <div><a href="/register">Registration </a></div>
+            </div>
+          </div>
+          <div>
+            <h3>Feedback</h3>
+            <div class="des">
+              <div><a href="/#videos">Students Videos</a></div>
+              <div><a href="/#feedback">Written Feedback</a></div>
+            </div>
+          </div>
+          <div>
+            <h3>Courses and Pricing</h3>
+            <div class="des">
+              <div><a href="/#courses">How Does Our pricing Work ?</a></div>
+              <div><a href="#cert">Certificates</a></div>
+            </div>
+          </div>
+          <img src="assets/phone.svg" alt="phone" class="bell" />
+        </div>
+        <div class="foo">
+          <img src="assets/icons/instaf.svg" alt="Social" onclick="location.href= 'https://google.com'" />
+          <img src="assets/icons/facebook.svg" alt="Social" onclick="location.href= 'https://google.com'" />
+          <img src="assets/icons/whatsapp.svg" alt="Social" onclick="location.href= 'https://google.com'" />
+          <img src="assets/icons/linkedin.svg" alt="Social" onclick="location.href= 'https://google.com'" />
+        </div>
+        <div class="tail">
+          <div>©2024DMH. All rights reserved.</div>
+          <div>
+            <a href="">Terms and conditions</a>
+            <a href="">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      let logo = document.getElementById("logo");
+
+      logo.onclick = function () {
+        location.href = "/";
+      };
+
+    </script>
+
+    <script src="js/master.js"></script>
+  </body>
+</html>

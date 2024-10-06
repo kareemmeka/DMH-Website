@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/header') %>
+    <link rel="stylesheet" href="../css/framework.css" />
+    <style>
+      h1 {
+        background: #233f80;
+        color: white;
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .parent {
+        /*background: #f8f8f8;*/
+        background: #233f80;
+        border-radius: 10px;
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+      }
+
+      p {
+        padding: 10px 20px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        background: var(--navy);
+        color: white !important;
+        text-decoration: none;
+        border-radius: 5px;
+        width: fit-content;
+      }
+
+      .e {
+        font-weight: bold;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      td,
+      th {
+        border: 2px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h1>Hi DMH team! 👋</h1>
+      <p>
+        We hope this email finds you well. We wanted to tell you that there is a
+        new student want to register.
+      </p>
+
+      <p>
+        <%= caption %> name is <%= name %>, Email: <%= email %>,
+        Phone: <%= phone %>
+      </p>
+
+      <table>
+        <tr>
+          <th>Data</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td><%= name %></td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td><%= date %></td>
+        </tr>
+        <tr>
+          <td>Citizen</td>
+          <td><%= citizien %></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td><%= gender %></td>
+        </tr>
+        <tr>
+          <td>Resident</td>
+          <td><%= resident %></td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td><%= phone %></td>
+        </tr>
+        <tr>
+          <td>School</td>
+          <td><%= school %></td>
+        </tr>
+        <tr>
+          <td>School Type</td>
+          <td><%= schoolType %></td>
+        </tr>
+        <tr>
+          <td>Parent Name</td>
+          <td><%= pname %></td>
+        </tr>
+        <tr>
+          <td>Parent Email</td>
+          <td><%= pemail %></td>
+        </tr>
+        <tr>
+          <td>Course</td>
+          <td><%= course %></td>
+        </tr>
+        <tr>
+          <td>Parent Country</td>
+          <td><%= pcountry %></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td><%= city %></td>
+        </tr>
+        <tr>
+          <td>Street</td>
+          <td><%= street %></td>
+        </tr>
+        <tr>
+          <td>Postal</td>
+          <td><%= postal %></td>
+        </tr>
+        <tr>
+          <td>Promocode</td>
+          <td><%= promocode %></td>
+        </tr>
+        <tr>
+          <td>Referral</td>
+          <td><%= referral %></td>
+        </tr>
+        <tr>
+          <td>Initiative</td>
+          <td><%= initiative %></td>
+        </tr>
+        <tr>
+          <td>Financial Aid</td>
+          <td><%= aid %></td>
+        </tr>
+      </table>
+
+      <p>Please contact with this student as soon as possible!</p>
+    </div>
+  </body>
+</html>
